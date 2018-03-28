@@ -84,7 +84,7 @@
             "Properties": {
                 "Description": "GuardDutyRule",
                 "State": "ENABLED",
-                "EventPattern" : { "source": ["aws.guardduty"] },
+                "EventPattern" : { "source": ["aws.guardduty"], "detail-type": ["GuardDuty Finding"] },
                 "Targets": [{
                     "Arn": { "Fn::GetAtt" : ["findingsToSlack", "Arn"] },
                     "Id": "GuardDutyFunction"
