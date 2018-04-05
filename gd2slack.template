@@ -207,7 +207,7 @@
     "        attachments : attachment,\n",
     "        username: 'GuardDuty',\n",
     "        'mrkdwn': true,\n",
-    "        icon_url: 'https://github.com/tomstickle/GD2Slack/blob/master/images/gd_logo.png'\n",
+    "        icon_url: 'https://github.com/aws-samples/GD2Slack/blob/master/images/gd_logo.png'\n",
     "    };\n",
     "\n",
     "    postMessage(slackMessage, (response) => {\n",
