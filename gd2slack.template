@@ -162,7 +162,7 @@
     "    const findingDescription = message.detail.description;\n",	
     "    const findingTime = message.detail.updatedAt;\n",
     "    const findingTimeEpoch = Math.floor(new Date(findingTime) / 1000);\n",
-    "    const account =  message.account;\n",
+    "    const account =  message.detail.accountId;\n",
     "    const region =  message.region;\n",
     "    const messageId = message.detail.id;\n",
     "    const lastSeen = `<!date^${findingTimeEpoch}^{date} at {time} | ${findingTime}>`;\n",
