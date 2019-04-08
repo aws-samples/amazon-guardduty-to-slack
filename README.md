@@ -39,5 +39,4 @@ S3Key of your lambda function.
 
 ## License
 
-This sample application is distributed under the
-[Apache Software License](http://aws.amazon.com/asl/).
+This sample code is made available under the MIT-0 license. See the LICENSE file.
