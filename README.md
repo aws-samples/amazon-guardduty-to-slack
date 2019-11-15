@@ -1,10 +1,10 @@
 # amazon-guardduty-to-slack
-Demonstrates sending Amazon GuardDuty findings to your Slack Channel 
+Demonstrates sending Amazon GuardDuty findings to your Slack Channel
 
 ## Prerequisites:
 
 You must have your own slack account
-  
+
 ## Step 1:
 Create an incoming webhook in slack
 - Go to your slack application and select your team on the top left corner as shown:
@@ -24,18 +24,18 @@ Use the CloudFormation service to execute the gd2slack.template in this reposito
 ## Thats it!  The template will run for about 5 minutes and you are ready to go.
 
 To test the template be sure that you have GuardDuty enabled in the same region.
-You can then generate some sample findings.  In a few minutes, you should see 
-the findings showing up in your slack channel.  
+You can then generate some sample findings.  In a few minutes, you should see
+the findings showing up in your slack channel.
 
 ### Extending the sample and making it your own
 
-This project is intended to be a sample and I embedded the lambda code directly into the 
+This project is intended to be a sample and I embedded the lambda code directly into the
 CloudFormation template to make it simple to do an initial deployment to any region. The
 downside of doing this is that the lambda function is limited to 4096 characters and
 its node.js embedded in JSON which is difficult to work with.  If you want to extend
 the sample, I'd recommend that you package up the lambda code in your own S3 bucket. You
 would then just replace the ZipFile parameter in the CloudFormation to the S3Bucket and
-S3Key of your lambda function.  
+S3Key of your lambda function.
 
 ## License
 
