@@ -233,7 +233,7 @@
 			"minSeverityLevel" : {"Ref" : "MinSeverityLevel"}
 		    }
 		},
-                "Runtime": "nodejs8.10",
+                "Runtime": "nodejs12.x",
 		"MemorySize" : "128",
                 "Timeout": "10",
 		"Description" : "Lambda to push GuardDuty findings to slack",
