@@ -115,7 +115,6 @@
     " * Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.\n",
     " * SPDX-License-Identifier: MIT-0\n",
     " */\n",
-    "const AWS = require('aws-sdk');\n",
     "const url = require('url');\n",
     "const https = require('https');\n",
     "\n",
@@ -237,7 +236,7 @@
 			"minSeverityLevel" : {"Ref" : "MinSeverityLevel"}
 		    }
 		},
-                "Runtime": "nodejs16.x",
+                "Runtime": "nodejs20.x",
 		"MemorySize" : "128",
                 "Timeout": "10",
 		"Description" : "Lambda to push GuardDuty findings to slack",
